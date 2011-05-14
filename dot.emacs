@@ -17,6 +17,9 @@
 (setq x-select-enable-clipboard t)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
+;; Delete seleted text when typing
+(delete-selection-mode 1)
+
 ;; Put autosave files (ie #foo#) in one place, *not*
 ;; scattered all over the file system!
 (defvar autosave-dir "~/.emacs.d/autosaves/")
